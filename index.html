@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elegance Jewels</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>✨ Elegance Jewels ✨</h1>
+    <p>Artificial & Fashion Jewellery</p>
+</header>
+
+<div class="search-box">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Products..."
+        onkeyup="searchProducts()">
+</div>
+
+<div class="main-container">
+
+    <div class="products-section">
+        <div id="items" class="products"></div>
+    </div>
+
+    <div class="cart-section">
+        <h2>🛒 Cart</h2>
+
+        <div id="cartItems"></div>
+
+        <h3>Total: ₹<span id="total">0</span></h3>
+
+        <button
+        class="whatsapp-order"
+        onclick="sendWhatsApp()">
+            Order All on WhatsApp
+        </button>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Elegance Jewels</p>
+</footer>
+
+<script src="shop.js"></script>
+
+</body>
+</html>
